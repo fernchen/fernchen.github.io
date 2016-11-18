@@ -11,7 +11,7 @@
 <meta property="og:url" content="https://fernchen.github.io/2016/11/18/socket-programming-tcpip-in-c/index.html">
 <meta property="og:site_name" content="FernChen's Blog">
 <meta property="og:description" content="之前听舍友提到如何通过TCP/IP协议发送数据给目标主机，这应该是一个像QQ一样的聊天程序。想来自己很久没有使用C语言，并且之前也没有接触过网络编程，于是想动手做做。">
-<meta property="og:updated_time" content="2016-11-18T05:35:25.370Z">
+<meta property="og:updated_time" content="2016-11-18T05:39:54.253Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Windows下TCP/IP协议的socket聊天程序">
 <meta name="twitter:description" content="之前听舍友提到如何通过TCP/IP协议发送数据给目标主机，这应该是一个像QQ一样的聊天程序。想来自己很久没有使用C语言，并且之前也没有接触过网络编程，于是想动手做做。">
@@ -271,7 +271,7 @@
 <li>如果想在同一局域网内两台不同的计算机上实验，除了得把运行客户端程序的socket地址改成运行服务端程序的计算机地址外，还得进行如下处理：<blockquote>
 <ol>
 <li>将项目的改成release调试模式。菜单栏<strong>生成</strong>-&gt;<strong>配置管理器</strong>-&gt;<strong>项目配置</strong>，把对应项目的配置下拉栏改成<strong>release</strong>。</li>
-<li>设置项目属性。选中项目，右键选择<strong>属性</strong>,然后在<strong>配置属性</strong>中选择<strong>规</strong>，把<strong>MFC的使用</strong>值改成<strong>使用标准Windows库</strong>。然后在<strong>C/C++</strong>选项下选择<strong>代码生成</strong>，将<strong>运行库</strong>值改成<strong>多线程(/MT)</strong>。应用并保存修改。<br>以上两步在客户端和服务端两个项目上均操作。修改完成后，选择运行，然后在解决方案文件内可以找到一个<strong>release</strong>的文件夹，在这个文件下有两个<strong>.exe</strong>文件，这就是可执行文件。把这两个文件拷贝到任意Windows计算机下，都可以正常运行。</li>
+<li>设置项目属性。选中项目，右键选择<strong>属性</strong>,然后在<strong>配置属性</strong>中选择<strong>常</strong>，把<strong>MFC的使用</strong>值改成<strong>使用标准Windows库</strong>。然后在<strong>C/C++</strong>选项下选择<strong>代码生成</strong>，将<strong>运行库</strong>值改成<strong>多线程(/MT)</strong>。应用并保存修改。<br>以上两步在客户端和服务端两个项目上均操作。修改完成后，选择运行，然后在解决方案文件内可以找到一个<strong>release</strong>的文件夹，在这个文件下有两个<strong>.exe</strong>文件，这就是可执行文件。把这两个文件拷贝到任意Windows计算机下，都可以正常运行。</li>
 </ol>
 </blockquote>
 </li>
@@ -288,7 +288,7 @@
         <p><span>本文标题:</span><a href="/2016/11/18/socket-programming-tcpip-in-c/">Windows下TCP/IP协议的socket聊天程序</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 FernChen 的个人博客">FernChen</a></p>
         <p><span>发布时间:</span>2016年11月18日 - 12时32分</p>
-        <p><span>最后更新:</span>2016年11月18日 - 13时35分</p>
+        <p><span>最后更新:</span>2016年11月18日 - 13时39分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/11/18/socket-programming-tcpip-in-c/" title="Windows下TCP/IP协议的socket聊天程序">https://fernchen.github.io/2016/11/18/socket-programming-tcpip-in-c/</a>
             <span class="copy-path" data-clipboard-text="原文: https://fernchen.github.io/2016/11/18/socket-programming-tcpip-in-c/　　作者: FernChen" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
